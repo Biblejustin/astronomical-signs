@@ -20,11 +20,15 @@ These events are listed primarily for cross-reference with the terrestrial-corre
 
 Stacked event timeline by category (total solar eclipses, lunar eclipses, comets, supernovae, meteor storms, solar storms). Visualizes the temporal density of each event class as catalogued — note this is what historians and astronomers noted, not the true rate.
 
+**In plain English:** Each row is a different kind of astronomical event. A tick mark on a row is one event in that year. Comets are clearly common (regular Halley returns + irregular bright visitors). Total solar eclipses appear scattered. Supernovae visible to the naked eye are extraordinarily rare — fewer than ten in two thousand years.
+
 ![Events timeline](plots/01_events_timeline.png)
 
 ### Total solar eclipses per decade (catalog)
 
 Total solar eclipses per decade in this catalog, with an OLS fit + bootstrap CI. The slope reflects historian attention drifting upward over time, not an actual change in eclipse rate (~24 total solar eclipses globally per century is set by orbital mechanics).
+
+**In plain English:** How many eclipses appear in this catalog by decade. The slight upward trend is *not* because eclipses are happening more often — they happen at a rate set by the geometry of the Earth-Moon-Sun system, about 24 total solar eclipses per century, and that hasn't changed in millions of years. The upward slope is just because more recent eclipses got into this catalog (better record-keeping, more scientific interest, social media). Real eclipse rates are constant.
 
 ![Eclipses per decade](plots/02_eclipses_per_decade.png)
 
@@ -32,11 +36,15 @@ Total solar eclipses per decade in this catalog, with an OLS fit + bootstrap CI.
 
 Halley returns plotted separately from "other great comets." Halley traces a regular ~75-year clock; bright non-periodic comets (Great Comet of 1577, 1680, 1843, 1882, Hale-Bopp 1997, McNaught 2007, NEOWISE 2020) appear at irregular intervals.
 
+**In plain English:** Top row: every Halley's Comet return since 1066. They march along at almost exactly 75 years apart, because Halley orbits the Sun on a predictable schedule. Bottom row: bright "great comets" that don't have a regular schedule. They show up when they show up. Hale-Bopp in 1997 was the brightest in living memory.
+
 ![Comets timeline](plots/03_comets_timeline.png)
 
 ### Naked-eye supernovae
 
 The 8 visible galactic supernovae of recorded history with year labels. The 383-year gap between SN 1604 (Kepler's nova, last galactic SN observed before the telescope) and SN 1987A (which was in the LMC, not the Milky Way itself) is visible.
+
+**In plain English:** Every supernova bright enough to see without a telescope, recorded over almost two thousand years. There are only eight. The 383-year gap between 1604 (which Kepler watched) and 1987 (which was actually in a nearby small galaxy, not our own Milky Way) is the longest stretch in the catalog. Astronomers say a galactic-scale supernova should happen roughly once a century; we've now gone over four centuries without one in our own galaxy, which is unusual but not unprecedented.
 
 ![Supernovae](plots/04_supernovae.png)
 
