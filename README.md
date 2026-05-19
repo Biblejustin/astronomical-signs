@@ -14,7 +14,31 @@ Parallel to `earthquakes`, `spaceweather`, `famines-tracking`, `flood-data`, `pa
 
 These events are listed primarily for cross-reference with the terrestrial-correlations work. Celestial mechanics is fully predictable, so any correlation with terrestrial events would have to be the terrestrial side responding to the celestial one, not vice versa.
 
-See `plots/` for the four charts.
+## Sample output
+
+### Events timeline by type
+
+Stacked event timeline by category (total solar eclipses, lunar eclipses, comets, supernovae, meteor storms, solar storms). Visualizes the temporal density of each event class as catalogued — note this is what historians and astronomers noted, not the true rate.
+
+![Events timeline](plots/01_events_timeline.png)
+
+### Total solar eclipses per decade (catalog)
+
+Total solar eclipses per decade in this catalog, with an OLS fit + bootstrap CI. The slope reflects historian attention drifting upward over time, not an actual change in eclipse rate (~24 total solar eclipses globally per century is set by orbital mechanics).
+
+![Eclipses per decade](plots/02_eclipses_per_decade.png)
+
+### Comets timeline
+
+Halley returns plotted separately from "other great comets." Halley traces a regular ~75-year clock; bright non-periodic comets (Great Comet of 1577, 1680, 1843, 1882, Hale-Bopp 1997, McNaught 2007, NEOWISE 2020) appear at irregular intervals.
+
+![Comets timeline](plots/03_comets_timeline.png)
+
+### Naked-eye supernovae
+
+The 8 visible galactic supernovae of recorded history with year labels. The 383-year gap between SN 1604 (Kepler's nova, last galactic SN observed before the telescope) and SN 1987A (which was in the LMC, not the Milky Way itself) is visible.
+
+![Supernovae](plots/04_supernovae.png)
 
 ## What's in it
 
@@ -31,22 +55,6 @@ Coverage:
 - **Visible supernovae** — all naked-eye supernovae of recorded history (SN 185, 393, 1006, 1054 Crab, 1181, 1572 Tycho, 1604 Kepler, 1987A)
 - **Leonid meteor storms** — historic November showers (1833, 1866, 1966, 2001)
 - A few major solar storms (1859 Carrington, 1989 Quebec, 2003 Halloween) for cross-reference
-
-## Plots
-
-`make_plots.py` generates four standalone analytical plots:
-
-### `plots/01_events_timeline.png`
-Stacked event timeline by type (solar eclipses, lunar, comets, supernovae, meteor storms, solar storms) — visualizes the temporal density of each event class in the catalog.
-
-### `plots/02_eclipses_per_decade.png`
-Total solar eclipses per decade *in this catalog*. NB: this is selection-biased — only historically significant eclipses are listed, so the per-decade count reflects which were noted by chroniclers, not the true rate (~24 per century globally).
-
-### `plots/03_comets_timeline.png`
-Halley returns marked separately from "other great comets." Shows the regular Halley clock plus the irregular bright comets. Includes empirical Halley inter-return interval (mean ~75 yr).
-
-### `plots/04_supernovae.png`
-The 8 naked-eye supernovae of recorded history with year labels. Visualizes the 383-year SN 1604 → SN 1987A gap.
 
 ## Detection-bias notes
 
