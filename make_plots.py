@@ -81,9 +81,28 @@ def plot_02_eclipses_per_decade(df: pd.DataFrame):
               f"Real rate: ~24 total solar eclipses globally per century;\nthis catalog lists "
               f"only historically/scientifically significant ones.",
               transform=ax.transAxes, fontsize=9, va="top", alpha=0.8)
+    # Trend on per-decade catalog count (NB: this is selection-bias dominated)
+    counts_arr = np.array(counts, dtype=float)
+    full_mask = decades < PARTIAL_DECADE_START
+    x_fit = decades[full_mask]; y_fit = counts_arr[full_mask]
+    if (y_fit > 0).sum() >= 3:
+        slope, intercept = np.polyfit(x_fit, y_fit, 1)
+        rng = np.random.default_rng(42)
+        boot = []
+        for _ in range(2000):
+            idx = rng.integers(0, len(x_fit), len(x_fit))
+            s, _ = np.polyfit(x_fit[idx], y_fit[idx], 1)
+            boot.append(s)
+        ci_lo, ci_hi = np.percentile(boot, [2.5, 97.5])
+        ax.plot(decades, slope * decades + intercept, "k--", linewidth=1.5,
+                  label=f"OLS trend on catalog inclusions: {slope:+.3f}/decade [95% CI {ci_lo:+.3f}, {ci_hi:+.3f}]")
+        ax.legend(loc="upper right", fontsize=8)
+    else:
+        slope, ci_lo, ci_hi = np.nan, np.nan, np.nan
     plt.tight_layout()
     plt.savefig(PLOTS / "02_eclipses_per_decade.png")
     plt.close()
+    return slope, ci_lo, ci_hi
 
 
 def plot_03_comets_timeline(df: pd.DataFrame):
@@ -151,7 +170,9 @@ def main():
     print(f"Loaded {len(df)} astronomical events")
     print(f"Types: {df['type'].value_counts().to_dict()}")
     plot_01_events_timeline(df)
-    plot_02_eclipses_per_decade(df)
+    slope, lo, hi = plot_02_eclipses_per_decade(df)
+    print(f"Decadal eclipse-catalog trend ({CATALOG_START}+): {slope:+.3f}/decade "
+            f"[95% CI {lo:+.3f}, {hi:+.3f}] — note this reflects historian attention not actual rate")
     plot_03_comets_timeline(df)
     plot_04_supernovae(df)
     print(f"Wrote 4 plots to {PLOTS}/")
