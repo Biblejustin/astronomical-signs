@@ -2,7 +2,7 @@
 
 Catalog of notable astronomical events: total solar/lunar eclipses, naked-eye comets, visible supernovae, and major meteor storms. Compiled to support the "signs in the heavens" branch of the correlation analysis (Mt 24:29 framing).
 
-Parallel to `earthquakes`, `spaceweather`, `famines-tracking`, `flood-data`, `pandemics-tracking`, `volcanic-eruptions`, `tropical-cyclones`.
+One of 10 sibling repos analyzed together — see the [`correlations`](https://github.com/Biblejustin/correlations) hub for the cross-repo analysis.
 
 ## Quick findings
 
