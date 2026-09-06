@@ -1,0 +1,2 @@
+# Eclipse monitor itself uses Python standard library plus pinned Node.js.
+pytest==9.1.1

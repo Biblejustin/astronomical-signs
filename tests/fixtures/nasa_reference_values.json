@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "extraction": "Solar HTML Table16 parsed as published. Lunar source PDF pages rendered at1800px and contact/duration labels visually transcribed2026-09-06; raw PDFs archived by SHA256. Values are independent published references, not harness-generated expectations.",
+  "solar": {
+    "date": "2006-03-29", "source_key": "validation/solar2006.html",
+    "coordinates": "31deg46minN35deg14minE809m",
+    "contacts": {"C1": "09:37:42.1", "MID": "10:56:42.0", "C4": "12:13:19.5"},
+    "maximum_altitude_deg": 57, "magnitude": 0.832, "obscuration": 0.799,
+    "local_type": "P"
+  },
+  "lunar": [
+    {"date": "2015-09-28", "source_key": "validation/lunar2015.pdf", "type": "T",
+     "contacts": {"P1":"00:11:47", "U1":"01:07:11", "U2":"02:11:10", "U3":"03:23:05", "U4":"04:27:03", "P4":"05:22:27"},
+     "duration_seconds": {"penumbral":18641, "umbral":11992, "total":4315},
+     "map_check": "Jerusalem within eclipse-at-moonset region; overall eclipse visible, final penumbral contact below horizon",
+     "above_horizon_contacts": ["P1", "U1", "U2"], "below_horizon_contacts": ["P4"]},
+    {"date": "2006-09-07", "source_key": "validation/lunar2006.pdf", "type": "P",
+     "contacts": {"P1":"16:44:07", "U1":"18:05:47", "U4":"19:36:53", "P4":"20:58:30"},
+     "duration_seconds": {"penumbral":15263, "umbral":5465},
+     "map_check": "Jerusalem within visible-eclipse region; umbral contacts above horizon; map does not resolve precise horizon altitude",
+     "above_horizon_contacts": ["U1", "U4"], "below_horizon_contacts": []},
+    {"date": "2020-01-10", "source_key": "validation/lunar2020.pdf", "type": "N",
+     "contacts": {"P1":"17:07:45", "P4":"21:12:19"},
+     "duration_seconds": {"penumbral":14674},
+     "map_check": "Jerusalem well inside all-eclipse-visible region; penumbral contact geometry does not assert naked-eye detectability",
+     "above_horizon_contacts": ["P1", "P4"], "below_horizon_contacts": []}
+  ]
+}
