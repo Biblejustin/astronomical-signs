@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+   <title>NASA - 2006 Total Solar Eclipse - Table 16</title>
+   <script language="JavaScript" type="text/javascript" src="../../../style/header.js"></script>
+   <meta name="author" content="F. Espenak" />
+   <meta name="keywords" content="eclipse, ephemeris, lunar, moon, solar, sun, total, transit" />
+   <meta name="description" content="This is NASA's official eclipse 2006 eclipse web page. It contains maps and tables for 7,000 years of eclipses and includes information on eclipse photography, observing tips and eye safety information." />
+</head>
+
+<body class="lnfiveon">
+<div id="widetxt"></div>
+<script language="JavaScript" type="text/javascript" src="../../../style/highlighter.js"></script>
+
+<script language="JavaScript" type="text/javascript" src="../../../style/navbar.js"></script>
+<noscript>
+<h1><a href="http://www.nasa.gov/">NASA (National Aeronautics and Space Administration)</a></h1>
+<ul>
+   <li id="one"><a href="../../../eclipse.html"><span>Home</span></a></li>
+   <li id="two"><a href="../../../solar.html"><span>Solar Eclipses</span></a></li>
+   <li id="three"><a href="../../../lunar.html"><span>Lunar Eclipses</span></a></li>
+   <li id="four"><a href="../../../transit/transit.html"><span>Planetary Transits</span></a></li>
+   <li id="five"><a href="../../../phase/phase2001gmt.html"><span>Moon Phases</span></a></li>
+</ul>
+<h1><a href="../../../eclipse.html">Eclipse Home Page</a></h1>
+<h2>by Fred Espenak, GSFC Planetary Systems Laboratory</h2>
+</noscript>
+
+<div id="contentwrapper">
+<div id="singlecolumn">
+
+<h1 class="box">Total Solar Eclipse of 2006 March 29</h1>
+<h2 class="box">Table 16 - Local Circumstances for the Near East </h2>
+<pre>
+
+
+Location Name    Latitude Longitude Elev.      First Contact        Second Contact      Third Contact        Fourth Contact           Maximum Eclipse       Eclip. Eclip. Umbral  Umbral
+                                              U.T.    P   V  Alt     U.T.    P   V       U.T.     P   V      U.T.    P   V  Alt     U.T.    P   V  Alt Azm   Mag.   Obs.  Depth  Durat.
+                                      m    h  m  s    &deg;   &deg;   &deg;    h  m  s    &deg;   &deg;     h  m  s     &deg;   &deg;    h  m  s    &deg;   &deg;   &deg;    h  m  s    &deg;   &deg;   &deg;   &deg;
+
+ARMENIA                 
+Jerevan          40&deg;11'N  044&deg;30'E     &ndash;   10:02:54.2 236 219 51      &ndash;                   &ndash;               12:29:30.9  47   3 31  11:18:09.6 321 287 43 228  0.912  0.900               
+
+AZERBAIJAN              
+Baku             40&deg;23'N  049&deg;51'E     &ndash;   10:11:28.2 240 215 48      &ndash;                   &ndash;               12:33:49.0  45 359 27  11:24:51.2 322 284 39 235  0.853  0.825               
+Ganca            40&deg;40'N  046&deg;22'E     &ndash;   10:06:10.8 237 217 50      &ndash;                   &ndash;               12:31:15.8  47   2 30  11:20:45.7 322 286 41 230  0.902  0.888               
+
+BAHRAIN                 
+Al-Manamah       26&deg;13'N  050&deg;35'E     &ndash;   10:10:12.8 264 223 59      &ndash;                   &ndash;               12:16:41.2  16 316 34  11:15:23.0 320 265 47 245  0.427  0.316               
+
+CYPRUS                  
+Nicosia          35&deg;10'N  033&deg;22'E   218   09:39:05.4 231 236 58      &ndash;                   &ndash;               12:14:46.1  45   3 44  10:58:00.0 318 293 55 210  0.950  0.948               
+
+IRAN                    
+Ahvaz            31&deg;19'N  048&deg;42'E     &ndash;   10:05:47.5 253 222 57      &ndash;                   &ndash;               12:24:49.6  28 333 32  11:17:28.8 320 273 46 239  0.602  0.514               
+Bakhtaran        34&deg;19'N  047&deg;04'E  1320   10:03:33.1 247 222 55      &ndash;                   &ndash;               12:27:23.7  35 344 32  11:17:37.9 320 278 45 235  0.712  0.647               
+Esfahan          32&deg;40'N  051&deg;38'E  1597   10:12:27.8 254 219 53      &ndash;                   &ndash;               12:28:42.1  29 335 29  11:22:53.0 321 273 42 242  0.604  0.516               
+Mashhad          36&deg;18'N  059&deg;36'E     &ndash;   10:27:18.7 255 215 44      &ndash;                   &ndash;               12:37:06.7  34 341 20  11:34:39.5 324 276 32 248  0.632  0.549               
+Qom              34&deg;39'N  050&deg;54'E     &ndash;   10:11:16.2 250 219 52      &ndash;                   &ndash;               12:30:30.3  34 341 29  11:23:12.1 322 276 41 239  0.672  0.598               
+Shiraz           29&deg;37'N  052&deg;33'E     &ndash;   10:14:35.9 260 220 55      &ndash;                   &ndash;               12:24:37.3  23 325 30  11:21:48.0 321 269 43 245  0.501  0.397               
+Tabriz           38&deg;05'N  046&deg;18'E     &ndash;   10:04:20.0 240 219 52      &ndash;                   &ndash;               12:29:56.0  42 355 31  11:19:14.0 321 283 43 231  0.830  0.795               
+Tehran           35&deg;40'N  051&deg;26'E  1200   10:12:33.0 249 218 51      &ndash;                   &ndash;               12:31:52.9  35 344 28  11:24:33.2 322 277 40 240  0.696  0.627               
+
+IRAQ                    
+Basra            30&deg;30'N  047&deg;47'E     &ndash;   10:03:27.6 253 224 58      &ndash;                   &ndash;               12:22:56.8  27 332 34  11:15:18.6 320 273 47 238  0.591  0.501               
+Mosul            36&deg;20'N  043&deg;08'E   223   09:57:26.4 240 223 55      &ndash;                   &ndash;               12:25:58.4  40 353 35  11:13:37.9 320 283 47 227  0.824  0.788               
+Baghdad          33&deg;21'N  044&deg;25'E    34   09:57:36.5 245 225 58      &ndash;                   &ndash;               12:24:09.5  34 343 35  11:12:52.9 320 279 48 231  0.722  0.660               
+
+ISRAEL                  
+Jerusalem        31&deg;46'N  035&deg;14'E   809   09:37:42.1 237 240 62      &ndash;                   &ndash;               12:13:19.5  38 351 45  10:56:42.0 317 288 57 215  0.832  0.799
+Tel Aviv-Yafo    32&deg;04'N  034&deg;46'E    10   09:37:12.8 236 240 61      &ndash;                   &ndash;               12:13:09.4  39 352 45  10:56:19.9 317 289 57 214  0.848  0.819               
+
+JORDAN                  
+'Amman           31&deg;57'N  035&deg;56'E   776   09:39:16.7 237 238 61      &ndash;                   &ndash;               12:14:19.5  38 350 44  10:58:04.0 317 287 56 216  0.824  0.789               
+Az-Zarqa'        32&deg;05'N  036&deg;06'E     &ndash;   09:39:45.8 237 238 61      &ndash;                   &ndash;               12:14:39.5  38 350 44  10:58:29.7 317 287 56 217  0.825  0.789               
+
+KUWAIT                  
+Kuwait City      29&deg;20'N  047&deg;59'E     5   10:03:36.0 255 224 59      &ndash;                   &ndash;               12:21:11.1  25 328 34  11:14:27.4 320 271 48 239  0.555  0.459               
+
+LEBANON                 
+Beirut           33&deg;53'N  035&deg;30'E     &ndash;   09:40:58.3 235 235 60      &ndash;                   &ndash;               12:16:01.2  41 356 43  10:59:45.6 318 289 55 215  0.881  0.861               
+Tripoli          34&deg;26'N  035&deg;51'E     &ndash;   09:42:18.7 234 234 59      &ndash;                   &ndash;               12:16:57.7  42 357 42  11:00:56.7 318 289 54 215  0.889  0.871               
+
+OMAN                    
+Masqat           23&deg;37'N  058&deg;35'E     &ndash;   10:35:11.4 280 223 50      &ndash;                   &ndash;               12:13:18.0   5 300 28  11:25:43.9 322 260 39 254  0.246  0.143               
+
+QATAR                   
+Doha             25&deg;17'N  051&deg;32'E     &ndash;   10:13:09.9 267 223 58      &ndash;                   &ndash;               12:15:00.4  14 312 34  11:15:56.6 320 264 46 246  0.386  0.274               
+
+SAUDI ARABIA            
+Jiddah           21&deg;30'N  039&deg;12'E     6   09:36:07.5 255 249 72      &ndash;                   &ndash;               11:57:54.7  16 315 49  10:48:03.4 315 270 63 230  0.495  0.391               
+Mecca            21&deg;27'N  039&deg;49'E     &ndash;   09:37:53.5 256 247 72      &ndash;                   &ndash;               11:58:13.3  15 314 49  10:49:08.6 315 269 63 231  0.481  0.376               
+Riyadh           24&deg;38'N  046&deg;43'E   591   09:59:24.7 261 228 64      &ndash;                   &ndash;               12:10:43.6  16 315 39  11:06:47.5 318 265 52 241  0.441  0.331               
+
+SYRIA                   
+Damascus         33&deg;30'N  036&deg;18'E   720   09:41:55.9 236 235 60      &ndash;                   &ndash;               12:16:30.9  40 354 43  11:00:33.6 318 288 54 216  0.857  0.831               
+Halab            36&deg;12'N  037&deg;10'E   390   09:46:49.3 234 230 57      &ndash;                   &ndash;               12:19:59.0  44 360 40  11:04:51.1 319 289 51 217  0.912  0.900               
+
+UNITED ARAB EMIRATES    
+Abu Dhabi        24&deg;28'N  054&deg;22'E     &ndash;   10:21:51.6 272 222 55      &ndash;                   &ndash;               12:14:14.0  10 306 32  11:19:47.3 321 262 43 250  0.323  0.212               
+Dubayy           25&deg;18'N  055&deg;18'E     &ndash;   10:23:47.8 272 222 54      &ndash;                   &ndash;               12:16:51.0  11 308 30  11:22:08.4 321 263 42 250  0.336  0.225               
+
+YEMEN                   
+'Adan            12&deg;45'N  045&deg;12'E     &ndash;   09:59:25.6 283 228 73      &ndash;                   &ndash;               11:28:01.2 348 275 53  10:44:11.6 315 247 64 251  0.149  0.068               
+Sana             15&deg;23'N  044&deg;12'E     &ndash;   09:52:17.3 274 233 74      &ndash;                   &ndash;               11:40:19.0 357 287 51  10:47:03.7 315 253 63 246  0.237  0.135               
+          
+
+
+</pre>
+
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+<hr />
+<br />
+<p style="text-align: center;">Table adapted from <a href="../../../SEpubs/TP212762.html">"Total Solar Eclipse of 2006 March 29" (NASA/TP-2004-212762)</a>.</p>
+
+<h3 style="text-align: center;"><i>Back to <a href="../TSE2006.html">Total Solar Eclipse of 2006 March 29 (NASA Web Site)</a></i></p>
+
+<script language="JavaScript" type="text/javascript">
+//<![CDATA[
+   <!--
+   document.write('<\/div>');
+   -->
+//]]>
+</script>
+
+</div>
+</div>
+
+<script language="JavaScript" type="text/javascript" src="../../../style/footer-1.js"></script>
+2006 Mar 02
+<script language="JavaScript" type="text/javascript" src="../../../style/footer-2.js"></script>
+<noscript>
+<hr class="blue" />
+<h3 style="text-align: center;">Go to <a href="../../../solar.html">NASA Solar Eclipse
+Page</a></h3>
+<h3 style="text-align: center;">Go to <a href="../../../lunar.html">NASA Lunar Eclise Page</a></h3>
+<h3 style="text-align: center;">Go to <a href="../../../transit/transit.html">NASA Planetary Transit Page</a></h3>
+<h3 style="text-align: center;">Go to <a href="../../../resource.html">NASA Eclipse Resource Page</a></h3>
+<hr class="blue" />
+<table BORDER="5" cellspacing="5" style="margin-left: auto; margin-right: auto;">
+<tr>
+<th>
+<table style="margin-left: auto; margin-right: auto;"><tr><td><img src="../../../image/NASAlogo.tiny.gif" alt="NASA logo" /></td>
+<td><p>Webmaster: Fred Espenak<br />
+Email: <a href="mailto:espenak@gsfc.nasa.gov">espenak@gsfc.nasa.gov</a></p>
+<p>Official NASA Representative: Dr. Drake Deming<br />
+Email: <a
+href="mailto:ddeming@pop600.gsfc.nasa.gov">ddeming@pop600.gsfc.nasa.gov</a></p></td></tr>
+</table>
+<p style="text-align: center;">Planetary Systems Laboratory &#8211; Code 693.0<br />
+NASA's Goddard Space Flight Center, Greenbelt, Maryland 20771, USA</p>
+</th>
+</tr>
+</table>
+</noscript>
+
+</body>
+</html>

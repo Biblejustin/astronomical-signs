@@ -1,0 +1,11 @@
+* text=auto eol=lf
+# Hash-bound archival bytes must survive autocrlf and checkout normalization.
+sources/nasa/objects/** -text
+sources/nasa/manifest.json -text
+sources/nasa/revisions/** -text
+vendor/nasa/** -text
+eclipse_plan.json -text
+source_pins.json -text
+eclipses.csv -text
+tests/fixtures/nasa_reference_values.json -text
+data/eclipses/** -text

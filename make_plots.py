@@ -1,10 +1,9 @@
 """Astronomical events analysis plots.
 
-These events differ from terrestrial catalogs: detection floor is set by
-celestial mechanics + global astronomical attention rather than instrument
-networks. Total eclipses in particular are predictable indefinitely from
-orbital mechanics, so the "catalog" question is really "which were noted by
-chroniclers."
+This script plots the selected historical index, not the complete modeled eclipse
+catalog added by monitor_eclipses.py. Selection, historical reporting and optical
+visibility differ across event classes; catalog gaps do not estimate physical
+occurrence rates or establish causes of terrestrial events.
 
 Conventions:
 - Pre-1500 events kept as research index; modern (1500+) for stats
@@ -78,10 +77,10 @@ def plot_02_eclipses_per_decade(df: pd.DataFrame):
     ax.set_ylabel("Total solar eclipses in catalog")
     ax.set_title("Total solar eclipses per decade (selection-biased catalog — not all listed)")
     ax.text(0.02, 0.95,
-              f"Real rate: ~24 total solar eclipses globally per century;\nthis catalog lists "
-              f"only historically/scientifically significant ones.",
+              "NASA lists 71 total solar eclipses in 1901–2000 globally;\n"
+              "this historical index selects only some events.",
               transform=ax.transAxes, fontsize=9, va="top", alpha=0.8)
-    # Multi-era trends — NB: all reflect catalog inclusion bias, not physical rate
+    # Descriptive fits characterize selected entries; they do not identify a physical rate.
     counts_arr = np.array(counts, dtype=float)
     eras = [
         (CATALOG_START, "Full catalog (1500+)", "#222222", "--"),
@@ -141,7 +140,7 @@ def plot_03_comets_timeline(df: pd.DataFrame):
     if len(intervals) > 0:
         ax.text(0.02, 0.05,
                   f"Halley inter-return: mean {intervals.mean():.1f} yr "
-                  f"(theoretical: 75.3)",
+                  "(listed apparitions; orbital period varies)",
                   transform=ax.transAxes, fontsize=9, alpha=0.85)
     ax.legend(loc="upper left", fontsize=9)
     plt.tight_layout()
@@ -161,7 +160,7 @@ def plot_04_supernovae(df: pd.DataFrame):
                     ha="center", fontsize=8, rotation=30, alpha=0.85)
     ax.set_yticks([])
     ax.set_xlabel("Year")
-    ax.set_title(f"Naked-eye supernovae ({len(sne)} total in {sne['year'].max() - sne['year'].min()} years; expected galactic rate ~1/100yr)")
+    ax.set_title(f"Selected historical supernovae ({len(sne)} entries; includes SN 1987A in another galaxy)")
     ax.set_xlim(0, 2050)
     ax.set_ylim(-0.5, 0.5)
     # Inter-supernova intervals
@@ -169,7 +168,7 @@ def plot_04_supernovae(df: pd.DataFrame):
     if len(intervals) > 0:
         ax.text(0.02, 0.05,
                   f"Mean inter-event: {intervals.mean():.0f} yr; "
-                  f"383-year gap 1604→1987 since Kepler's nova",
+                  "listed gap 1604→1987 crosses galaxies; not a physical rate",
                   transform=ax.transAxes, fontsize=9, alpha=0.85)
     plt.tight_layout()
     plt.savefig(PLOTS / "04_supernovae.png")

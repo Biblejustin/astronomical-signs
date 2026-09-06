@@ -1,79 +1,32 @@
 # astronomical-signs
 
-Catalog of notable astronomical events: total solar/lunar eclipses, naked-eye comets, visible supernovae, and major meteor storms. Compiled to support the "signs in the heavens" branch of the correlation analysis (Mt 24:29 framing).
+Selected historical astronomical events plus a separately versioned NASA eclipse monitor. The repository supports the [correlations research hub](https://github.com/Biblejustin/correlations). Biblical references provide thematic context; these data do not establish prophetic fulfillment or causation.
 
-One of 10 sibling repos analyzed together — see the [`correlations`](https://github.com/Biblejustin/correlations) hub for the cross-repo analysis.
+`eclipses.csv` remains the original selected historical index. It combines solar/lunar eclipses, comets, supernovae, meteor storms and solar storms. Selection criteria and historical detection differ across classes. Its counts must not be treated as a complete eclipse census or a uniform astronomical event rate.
 
-## Quick findings
+## Corrections to the historical interpretation
 
-- **63 events catalogued**, dominated by 26 comets and 20 total solar eclipses; 8 supernovae and 4 Leonid meteor storms make up the long-tail rarities.
-- **Halley's Comet returns** approximate the theoretical 75.3-year period (1066, 1145, 1222, 1301, 1378, 1456, 1531, 1607, 1682, 1759, 1835, 1910, 1986) — orbital mechanics predicts these centuries in advance.
-- **Naked-eye galactic supernovae** are vanishingly rare: 8 events in 1,800+ years (SN 185, 393, 1006, 1054 Crab, 1181, 1572 Tycho, 1604 Kepler, 1987A). The **383-year gap between Kepler 1604 and SN 1987A** is the longest in the catalog; we're "overdue" for the next one by ~280 years on a per-galaxy rate.
-- **Total solar eclipses occur ~24 times per century globally**, but only a small fraction make it into this catalog (those with major scientific impact or wide population visibility).
-- **The 1833 Leonid meteor storm** ("the night the stars fell") deposited an estimated 100,000+ meteors per hour over North America; comparable events in 1866, 1966, 2001.
+NASA lists **71 total solar eclipses during 1901–2000**, alongside other solar eclipse types. The earlier claim of about 24 total solar eclipses per century was incorrect. Counts vary across century intervals; local visibility differs from global occurrence. A regression through selected entries cannot identify a physical eclipse-rate trend. [NASA twentieth-century catalog](https://eclipse.gsfc.nasa.gov/SEcat5/SE1901-2000.html), [NASA catalog index](https://eclipse.gsfc.nasa.gov/SEcat5/SEcatalog.html).
 
-These events are listed primarily for cross-reference with the terrestrial-correlations work. Celestial mechanics is fully predictable, so any correlation with terrestrial events would have to be the terrestrial side responding to the celestial one, not vice versa.
+The supernova entries mix galaxies and optical discovery histories. **SN 1987A occurred in the Large Magellanic Cloud**, outside the Milky Way. The 383-year interval between 1604 and 1987 therefore is not a Milky Way waiting time. Nor is it the longest interval among this file’s entries. Missing optical reports do not imply no explosions: NASA’s Chandra observations identified a young Milky Way remnant whose original explosion was obscured by gas and dust. An average occurrence rate does not make the next event “overdue.” [NASA SN 1987A](https://www.nasa.gov/image-article/sn-87a/), [Chandra G1.9+0.3 discovery](https://chandra.harvard.edu/photo/2008/g19/).
 
-## Sample output
+Eclipse predictions follow celestial mechanics within stated ephemeris and Earth-rotation uncertainties. Predictability does not establish that any statistical association must be terrestrial events responding to an eclipse. Chance, common time patterns, selection and reporting remain alternative explanations; causal interpretation requires separate evidence. [NASA prediction uncertainties](https://eclipse.gsfc.nasa.gov/SEhelp/uncertainty2004.html).
 
-### Events timeline by type
+## Selected historical plots
 
-Stacked event timeline by category (total solar eclipses, lunar eclipses, comets, supernovae, meteor storms, solar storms). Visualizes the temporal density of each event class as catalogued — note this is what historians and astronomers noted, not the true rate.
+The plots below describe inclusion in `eclipses.csv`. Descriptive fits and gaps characterize this selected index; they do not estimate complete occurrence rates. Supernova entries and bright-comet entries are not claimed to exhaust all events visible to the naked eye. Listed Halley apparitions also do not imply an invariant orbital period.
 
-**In plain English:** Each row is a different kind of astronomical event. A tick mark on a row is one event in that year. Comets are clearly common (regular Halley returns + irregular bright visitors). Total solar eclipses appear scattered. Supernovae visible to the naked eye are extraordinarily rare — fewer than ten in two thousand years.
+![Selected events timeline](plots/01_events_timeline.png)
 
-![Events timeline](plots/01_events_timeline.png)
+![Selected total solar eclipses per decade](plots/02_eclipses_per_decade.png)
 
-### Total solar eclipses per decade (catalog)
+![Listed comet apparitions](plots/03_comets_timeline.png)
 
-Total solar eclipses per decade in this catalog, with an OLS fit + bootstrap CI. The slope reflects historian attention drifting upward over time, not an actual change in eclipse rate (~24 total solar eclipses globally per century is set by orbital mechanics).
+![Selected supernova entries](plots/04_supernovae.png)
 
-**In plain English:** How many eclipses appear in this catalog by decade. The slight upward trend is *not* because eclipses are happening more often — they happen at a rate set by the geometry of the Earth-Moon-Sun system, about 24 total solar eclipses per century, and that hasn't changed in millions of years. The upward slope is just because more recent eclipses got into this catalog (better record-keeping, more scientific interest, social media). Real eclipse rates are constant.
+The historical CSV columns remain `date`, `type`, `region_visible` and `notes_significance`. Some entries have only a year; historical notes are context, not uniform quantitative visibility measurements. Catalog gaps must remain distinguished from verified absence.
 
-![Eclipses per decade](plots/02_eclipses_per_decade.png)
-
-### Comets timeline
-
-Halley returns plotted separately from "other great comets." Halley traces a regular ~75-year clock; bright non-periodic comets (Great Comet of 1577, 1680, 1843, 1882, Hale-Bopp 1997, McNaught 2007, NEOWISE 2020) appear at irregular intervals.
-
-**In plain English:** Top row: every Halley's Comet return since 1066. They march along at almost exactly 75 years apart, because Halley orbits the Sun on a predictable schedule. Bottom row: bright "great comets" that don't have a regular schedule. They show up when they show up. Hale-Bopp in 1997 was the brightest in living memory.
-
-![Comets timeline](plots/03_comets_timeline.png)
-
-### Naked-eye supernovae
-
-The 8 visible galactic supernovae of recorded history with year labels. The 383-year gap between SN 1604 (Kepler's nova, last galactic SN observed before the telescope) and SN 1987A (which was in the LMC, not the Milky Way itself) is visible.
-
-**In plain English:** Every supernova bright enough to see without a telescope, recorded over almost two thousand years. There are only eight. The 383-year gap between 1604 (which Kepler watched) and 1987 (which was actually in a nearby small galaxy, not our own Milky Way) is the longest stretch in the catalog. Astronomers say a galactic-scale supernova should happen roughly once a century; we've now gone over four centuries without one in our own galaxy, which is unusual but not unprecedented.
-
-![Supernovae](plots/04_supernovae.png)
-
-## What's in it
-
-`eclipses.csv` — columns:
-
-- `date` — ISO date for date-precise events; year-only for ancient supernovae
-- `type` — `total_solar`, `lunar`, `comet`, `supernova`, `meteor_storm`, `solar_storm`
-- `region_visible`
-- `notes_significance` — historical context
-
-Coverage:
-- **Total solar eclipses 1502–2024** — selected high-impact events (totality crossing populated regions, historically significant observations like 1715 Halley, 1860 first photograph, 1919 Eddington, 2017/2024 Great American Eclipses)
-- **Bright comets** — all Halley apparitions back to 1066, plus the great comets (1577, 1680, 1811, 1843, 1858, 1861, 1874, 1882, 1910, 1996 Hyakutake, 1997 Hale-Bopp, 2007 McNaught, 2020 NEOWISE)
-- **Visible supernovae** — all naked-eye supernovae of recorded history (SN 185, 393, 1006, 1054 Crab, 1181, 1572 Tycho, 1604 Kepler, 1987A)
-- **Leonid meteor storms** — historic November showers (1833, 1866, 1966, 2001)
-- A few major solar storms (1859 Carrington, 1989 Quebec, 2003 Halloween) for cross-reference
-
-## Detection-bias notes
-
-| Type | Detection cleanliness |
-|---|---|
-| Total solar eclipses | Cleanest: computable backwards/forwards for millennia by celestial mechanics |
-| Naked-eye comets | Reasonably complete back to ~1500 in Eurasia; pre-1500 fragmentary outside East Asia |
-| Visible supernovae | All naked-eye galactic SNe of the past 2000 years are catalogued, but galactic SN rate is so low (~1 per 100 yr) that "absence of more" isn't meaningful |
-| Meteor storms | Only Leonid super-outbursts are well-documented; meteor showers in general are seen yearly |
-
-## Reproducing the plots
+## Reproducing historical plots
 
 ```bash
 python3 -m venv .venv
@@ -81,13 +34,61 @@ python3 -m venv .venv
 .venv/bin/python make_plots.py
 ```
 
-## Source
+Historical compilation references include NASA eclipse catalogs; Kronk’s *Cometography*; Stephenson and Green’s *Historical Supernovae and Their Remnants*; and McKinley’s *Meteor Science and Engineering*. These broad references do not supply uniform row-level provenance for the selected index.
 
-- NASA Eclipse catalog — https://eclipse.gsfc.nasa.gov/
-- Naked-eye comet list compiled from Kronk, *Cometography* (multi-volume)
-- Supernova list from Stephenson & Green, *Historical Supernovae and Their Remnants* (2002)
-- Leonid storm dates from McKinley, *Meteor Science and Engineering* (1961)
+## NASA eclipse monitor
 
-## Intended use
+[Current report](data/eclipses/report.md) includes the next Jerusalem-visible events, model altitude and above-horizon phase duration. The complete catalog contains **454 solar and 459 lunar events during 1900–2100**. All global event types remain present, including events invisible from Jerusalem and future predictions.
 
-Data source for "signs in the heavens" correlation tests in [`Biblejustin/correlations`](https://github.com/Biblejustin/correlations). Expected to produce strong null results — the dates are essentially random with respect to terrestrial events.
+The fixed location is NASA’s Jerusalem city point: **31°46′N, 35°14′E, elevation 808.9 m**. It represents one location, not an all-Israel visibility footprint. Source horizon conventions exclude terrain, buildings, clouds and visual contrast. Penumbral geometry does not promise naked-eye detection. See the [frozen plan](eclipse_plan.json) for exact conventions and limits.
+
+**Times are modeled UT1**, obtained from source TD minus source ΔT. They are not exact leap-second-aware UTC. Every contact has its own Gregorian date across midnight. Original source ephemerides and ΔT predictions are retained; future timing carries model uncertainty. Past catalog entries remain model predictions, not verified sighting records.
+
+The [validation report](data/eclipses/validation.json) checks complete catalog identity/type/count coverage, interval bounds and independent NASA references. The Jerusalem solar reference is the published 2006 March 29 local table. Lunar references cover 2015 September 28, 2006 September 7 and 2020 January 10 contact times and qualitative visibility maps. These are independent published checks, not independent physical models. Solar elements contain no categorical global type: global P/A/T/H remain pinned catalog fields with unique greatest-TD identity joins. Independent element/global categorical-type agreement applies to lunar eclipses only. Lunar altitude has no independent numeric validation here. Frozen tolerances never expand to accommodate results.
+
+### Daily offline replay
+
+Use **Python 3.13** and **Node 26.8.1** (`.python-version`, `.nvmrc`). The monitor rejects Python older than 3.11 and any different Node version. It needs no Python package beyond the standard library.
+
+```bash
+python3.13 monitor_eclipses.py --offline
+# Reproduce a particular report date:
+python3.13 monitor_eclipses.py --offline --as-of 2026-09-06
+```
+
+Daily replay verifies pinned raw inputs/code and regenerates only `data/eclipses/`. Original `eclipses.csv`, source archives, vendor code and the plan remain unchanged. A failed catalog/model/reference check preserves the last successful export; diagnostic failure details go to `data/diagnostics/`.
+
+Live source checks are a separate review step:
+
+```bash
+python3.13 monitor_eclipses.py --check-sources
+```
+
+This downloads candidates to ignored `.cache/eclipse-source-candidates/`, recording source URL and old/new hashes. It never activates new source data or code. Changed/failed sources return exit status 2 for review. Updating pinned inputs requires an explicit reviewed revision and rerunning frozen validation; keep earlier raw objects and revision manifests.
+
+### Exports and provenance
+
+| File under `data/eclipses/` | Meaning |
+|---|---|
+| `global_catalog.csv` | Every global event, raw NASA type code plus normalized type, catalog identity, source line/hash, TD/ΔT/UT1 and global durations |
+| `jerusalem_events.csv` | One row per global event; local geometry/type, horizon-visible interval, altitude, solar magnitude/obscuration and phase durations |
+| `jerusalem_contacts.csv` | Every applicable local contact, its full UT1 date, source altitude and horizon flag; absent phases stay absent |
+| `annual_counts.csv` | All 201 years × seven global type classes, with explicit global denominators and Jerusalem visibility counts; current/future model years labeled |
+| `validation.json` | Frozen reference checks, per-event bounds and remaining validation limits |
+| `monitor.json` | Location/time/model metadata, current source/code bindings and hashes/byte lengths of the six companion exports |
+| `report.md` | Readable coverage, caveats and upcoming events |
+
+Files are staged and validated before individual replacements. `monitor.json` is replaced last. **Consumers must verify all six companion hashes and byte lengths before trusting a snapshot**; interruption during replacement can temporarily leave files inconsistent, which those checks detect. No multi-file filesystem transaction is claimed.
+
+Original bytes reside in [sources/nasa](sources/nasa), addressed by SHA256. [Manifest](sources/nasa/manifest.json) records URLs, first-fetch timestamps, available publication timestamps and hashes; [source pins](source_pins.json) bind inputs, frozen plan, reference fixtures and the unchanged historical CSV. Initial method-research download timestamps were retained from successful download file times. Publication dates are not inferred when unavailable.
+
+NASA programs retain their GPL version 2-or-later license and attribution in [vendor/nasa](vendor/nasa). The adapter reuses those programs, with no installed ephemeris package. Detailed public source documentation: [solar model](https://eclipse.gsfc.nasa.gov/JSEX/JSEX-key.html), [lunar model](https://eclipse.gsfc.nasa.gov/JLEX/JLEX-key.html).
+
+### Tests
+
+```bash
+python3.13 -m pip install -r requirements-dev.txt
+python3.13 -m pytest tests/test_eclipse_monitor.py -q
+```
+
+Tests run offline against retained NASA inputs and temporary output directories. GitHub fixture CI uses Python 3.13, Node 26.8.1, read-only repository permission and a `Biblejustin` owner gate; it does not fetch NASA, commit or push.
